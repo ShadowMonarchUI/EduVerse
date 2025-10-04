@@ -103,7 +103,7 @@ const Dashboard: React.FC = () => {
       description: 'Community educational content',
       icon: Users,
       color: 'var(--success-500)',
-      gradient: 'linear-gradient(135deg, #10b981, #06b6d4)',
+       gradient: 'linear-gradient(135deg, #10b981, #06b6d4)',
       action: () => setActiveCard(2)
     },
     {
