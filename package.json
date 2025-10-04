@@ -1,0 +1,36 @@
+{
+  "name": "eduverse-clean",
+  "description": "EduVerse - AI-Powered Adaptive Learning Ecosystem",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@humeai/voice": "^0.1.10",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.21",
+    "firebase": "^12.3.0",
+    "framer-motion": "^12.23.22",
+    "hume": "^0.14.1",
+    "lucide-react": "^0.544.0",
+    "postcss": "^8.5.6",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.9.3",
+    "recharts": "^3.2.1",
+    "tailwindcss": "^4.1.14",
+    "uuid": "^13.0.0"
+  }
+}
