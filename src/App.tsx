@@ -25,24 +25,6 @@ import MockTestPage from './pages/student/cards/MockTestPage'
 // Teacher pages
 import SimplifiedTeacherDashboard from './pages/teacher/SimplifiedTeacherDashboard'
 
-// Test pages
-import YouTubeTestPage from './pages/YouTubeTestPage'
-import MemeChatGroupTest from './pages/MemeChatGroupTest'
-import MemeChatTestPage from './pages/MemeChatTestPage'
-import SimpleGroupChatV2Test from './pages/SimpleGroupChatV2Test'
-import EduVerseMemeChatTest from './pages/EduVerseMemeChatTest'
-import FirebaseTest from './pages/FirebaseTest'
-import DatabaseRulesTest from './pages/DatabaseRulesTest'
-import SimpleGroupChatFixedTest from './pages/SimpleGroupChatFixedTest'
-import FirebaseMessageTest from './pages/FirebaseMessageTest'
-import FirebaseRulesTest from './pages/FirebaseRulesTest'
-import PublicGroupChatTest from './pages/PublicGroupChatTest'
-import EduVerseFirebaseChatTest from './pages/EduVerseFirebaseChatTest'
-import FirebaseConnectionTestPage from './pages/FirebaseConnectionTestPage'
-import DatabaseRulesTesterPage from './pages/DatabaseRulesTesterPage'
-import ThemedFirebaseChatTest from './pages/ThemedFirebaseChatTest'
-import EduGroupChatTest from './pages/EduGroupChatTest'
-
 function App() {
   return (
     <AuthProvider>
@@ -57,22 +39,6 @@ function App() {
                   <Route path="/" element={<UserTypeSelection />} />
                   <Route path="/login/:userType" element={<Login />} />
                   <Route path="/signup/:userType" element={<Signup />} />
-                  <Route path="/youtube-test" element={<YouTubeTestPage />} />
-                  <Route path="/meme-chat" element={<MemeChatGroupTest />} />
-                  <Route path="/meme-chat-test" element={<MemeChatTestPage />} />
-                  <Route path="/simple-chat-v2" element={<SimpleGroupChatV2Test />} />
-                  <Route path="/edu-meme-chat" element={<EduVerseMemeChatTest />} />
-                  <Route path="/firebase-test" element={<FirebaseTest />} />
-                  <Route path="/db-rules-test" element={<DatabaseRulesTest />} />
-                  <Route path="/simple-chat-fixed" element={<SimpleGroupChatFixedTest />} />
-                  <Route path="/firebase-message-test" element={<FirebaseMessageTest />} />
-                  <Route path="/firebase-rules-test" element={<FirebaseRulesTest />} />
-                  <Route path="/public-chat-test" element={<PublicGroupChatTest />} />
-                  <Route path="/edu-firebase-chat" element={<EduVerseFirebaseChatTest />} />
-                  <Route path="/firebase-connection-test" element={<FirebaseConnectionTestPage />} />
-                  <Route path="/database-rules-test" element={<DatabaseRulesTesterPage />} />
-                  <Route path="/themed-firebase-chat" element={<ThemedFirebaseChatTest />} />
-                  <Route path="/edu-group-chat" element={<EduGroupChatTest />} />
                   
                   {/* Student routes */}
                   <Route path="/student/assessment" element={
@@ -111,15 +77,12 @@ function App() {
                     </ProtectedRoute>
                   } />
                   
-                  {/* Teacher routes */}
-                  
                   {/* Shared routes */}
                   <Route path="/dashboard" element={
                     <ProtectedRoute>
                       <Dashboard />
                     </ProtectedRoute>
                   } />
-                  {/* Removed Knowledge Map route */}
                   <Route path="/ai-tutor" element={
                     <ProtectedRoute>
                       <AITutor />
