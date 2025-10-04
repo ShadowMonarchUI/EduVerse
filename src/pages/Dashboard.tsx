@@ -1066,7 +1066,7 @@ const Dashboard: React.FC = () => {
             </div>
             
             <div style={{ flex: 1, minHeight: 0 }}>
-              <EduGroupChat />
+              <GroupChat />
             </div>
           </div>
         );
